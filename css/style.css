@@ -1,0 +1,306 @@
+body {
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+
+h1 {
+  color: rgb(253, 246, 150);
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  text-shadow: 2px 2px 2px #000, -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000;
+  font-size: 80px;
+}
+h2{
+  color: rgb(253, 246, 150);
+  text-shadow: 2px 2px 2px #000, -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000;
+  font-size: 50px;
+
+}
+
+h3{
+  color: rgb(253, 246, 150);
+  font-size: 40px;
+  text-shadow: 2px 2px 2px #000, -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000;
+}
+
+label{
+  font-weight: bolder;
+}
+
+
+.registro_cliente{
+  padding: 10px;
+}
+
+/* Estilos registro.html */
+
+
+#id{
+  width: 50%;
+}
+
+#rut{
+  width: 50%;
+}
+#nombre{
+  width: 50%;
+}
+#apellido{
+  width: 50%;
+}
+#correo{
+  width: 50%;
+}
+#direccion{
+  width: 80%;
+}
+#password{
+  width: 60%;
+}
+#password2{
+  width: 60%;
+}
+
+/* estilos ficha de producto */
+
+div{
+  .ficha_titulo,.ficha_descripcion,
+  .ficha_disponible, .ficha_precio, .ficha_precio_suscriptor,
+  .ficha_stock, .ficha_stock{
+    background-color: rgb(99, 99, 99);
+  }
+}
+
+.ficha_imagen {
+  height: 100%;
+  float: right;
+  border: 4px solid rgb(253, 246, 150);
+}
+
+.ficha_titulo {
+  background-color: rgb(253, 246, 150);
+
+  font-size: 60px;
+  font-weight: bolder;
+  color: white;
+  
+}
+
+.ficha_disponible {
+  color: rgb(121, 245, 83);
+  background-color: rgb(253, 246, 150);
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+
+.ficha_precio_suscriptor{
+  font-size: 40px;
+  background-color: rgb(253, 246, 150);
+  color: rgb(255, 122, 122);
+  b{
+    color: rgb(255, 122, 122);
+  }
+}
+
+.ficha_precio {
+  font-size: 30px;
+  background-color: rgb(253, 246, 150);
+  color: white;
+  b{
+    color: rgb(255, 255, 255);
+  }
+}
+
+.ficha_descripcion {
+  padding: 10px;
+  background-color: rgb(253, 246, 150);
+  font-size: 18px;
+  font-style: bolder;
+  color: rgb(255, 255, 255);
+  text-shadow: none
+}
+
+.ficha_stock{
+  font-size: 20px;
+  background-color: rgb(253, 246, 150);
+  color: white;
+  b{
+    color: rgb(121, 245, 83);
+    font-size: 18px;
+  }
+}
+
+
+/* boleta */
+#boleta_tabla_estados td{
+  padding-right: 20px;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+/* Estilos de las imagenes del carrusel.*/
+
+  #sekiro_carrusel {
+    object-fit:cover;
+    max-width: 100%;
+
+  }
+
+  #eldenring_carrusel {
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+  #jedisurvivor_carrusel {
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+
+/*Estilos interiores de los contenedores de index.*/
+
+.index_disponible{
+  color: rgb(148, 250, 148);
+  font-weight: bolder;
+
+}
+
+.index_precio{
+  color: rgb(229, 255, 159);
+  font-size: 18px;
+  font-weight: bolder;
+
+}
+
+.index_suscrito{
+  color: rgb(255, 140, 140);
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.index_stock{
+  color: rgb(152, 255, 152);
+  font-weight: bolder;
+}
+ .index_nodisponible{
+  color: rgb(255, 162, 162);
+  font-weight: bolder;
+}
+
+.card-body{
+  background-color: rgb(99, 99, 99);
+  color: white;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+/* Estilos carrusel. */
+#descripcion_sekiro_carrusel{
+  text-shadow: 2px 2px 2px #000, -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000;
+  font-weight: bolder;
+  color: white;
+  font-size: 18px;
+
+}
+#descripcion_eldenring_carrusel{
+  text-shadow: 2px 2px 2px #000, -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000;
+  font-weight: bolder;
+  color: white;
+  font-size: 18px;
+
+}
+
+#descripcion_starwars_carrusel{
+  text-shadow: 2px 2px 2px #000, -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000;
+  font-weight: bolder;
+  color: white;
+  font-size: 18px;
+
+}
+
+#titulo_sekiro_carrusel{
+  text-shadow: 2px 2px 2px #000, -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000;
+  font-weight: bolder;
+  color: white;
+  font-size: 25px;
+
+}
+
+#titulo_eldenring_carrusel{
+  text-shadow: 2px 2px 2px #000, -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000;
+  font-weight: bolder;
+  color: white;
+  font-size: 25px;
+
+}
+
+#titulo_starwars_carrusel{
+  text-shadow: 2px 2px 2px #000, -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000;
+  font-weight: bolder;
+  color: white;
+  font-size: 25px;
+
+}
+
+
+.carousel-item{
+  padding: 50px;
+  img{
+    width: fit-content;
+    height: 640px;
+    object-fit:cover;
+  }
+
+}
+
+
+.card{
+  margin: 60px;
+
+}
+
+#cuadro_login{
+  tr{
+    color: black;
+  }
+}
+
+
+.tabla_compras{
+  th{border: 2px solid black; background-color: whitesmoke;
+}
+}
+.tabla_compras2{
+  td{
+    border: 1px solid black;
+  }
+}
+
+.tabla_carrito{
+  th{
+    border: 2px solid black; background-color: whitesmoke;
+  }
+}
+
+.tabla_carrito2{
+  td{
+    border: 1px solid black;
+  }
+}
+
+.tabla_boleta{
+  th{
+    border: 2px solid black; background-color: whitesmoke;
+  }
+}
+
+.tabla_boleta2{
+  td{
+    border: 1px solid black;
+  }
+}
