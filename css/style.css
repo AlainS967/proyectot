@@ -304,3 +304,53 @@ div{
     border: 1px solid black;
   }
 }
+
+/* Estilos generales */
+body {
+  padding: 20px; /* Aumenta el padding para más espacio */
+  background-color: #f8f9fa; /* Fondo más claro para mejor contraste */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más legible */
+}
+
+/* Encabezados */
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 20px; /* Más espacio entre encabezados y contenido */
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+/* Tarjetas de productos */
+.card {
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra sutil para destacar las tarjetas */
+}
+
+.card-img-top {
+  height: 200px; /* Altura fija para las imágenes */
+  object-fit: cover; /* Para que las imágenes cubran el área */
+}
+
+.card-body {
+  background-color: white;
+  color: #343a40;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+/* Otros estilos */
+label {
+  font-weight: bold;
+}

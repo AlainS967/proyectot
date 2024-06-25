@@ -48,7 +48,7 @@ $(document).ready(function() {
                 required: true,
                 soloLetras: true
             },
-            username: { 
+            apellidos: { 
                 required: true,
                 soloLetras: true
             },
@@ -61,7 +61,8 @@ $(document).ready(function() {
             },
             password: {
                 required: true,
-                passwordValido: true
+                minlength: 5,
+                maxlength:15
             },
             password2: {
                 required: true,
@@ -77,9 +78,9 @@ $(document).ready(function() {
                 required: "El nombre es un campo requerido",
                 soloLetras: "El nombre sólo puede contener letras y espacios en blanco"
             },
-            username: { 
-                required: "El nombre de usuario es un campo requerido",
-                soloLetras: "El nombre de usuario sólo puede contener letras y espacios en blanco"
+            apellidos: { 
+                required: "El apellido de usuario es un campo requerido",
+                soloLetras: "El apellido de usuario sólo puede contener letras y espacios en blanco"
             },
             correo: {
                 required: "El correo es un campo requerido",
@@ -90,7 +91,8 @@ $(document).ready(function() {
             },
             password: {
                 required: "La contraseña es un campo requerido",
-                passwordValido: "La contraseña debe tener al menos un número, un símbolo, una letra mayúscula y minúscula, y ser de al menos 8 caracteres."
+                minlength: "la contraseña no puede ser menor a 5",
+                maxlength: "la contraseña no puede ser mayor a 15"
             },
             password2: {
                 required: "Repetir contraseña es un campo requerido",

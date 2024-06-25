@@ -5,6 +5,10 @@ $(document).ready(function() {
                 required: true,
                 digits: true // Solo números
             },
+            categoria:{
+                required:true
+
+            },
             nombre: "required",
             descripcion: "required",
             precio: {
@@ -26,6 +30,10 @@ $(document).ready(function() {
             idproducto: {
                 required: "Por favor ingrese un ID.",
                 digits: "El ID debe contener solo números."
+            },
+            categoria:{
+                required:"la categoria es un campo obligatorio"
+
             },
             nombre: "Por favor ingrese un nombre.",
             descripcion: "Por favor ingrese una descripción.",

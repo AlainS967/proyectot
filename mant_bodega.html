@@ -15,7 +15,7 @@
     <div id="menu"></div>
 
     <h1>Mantenedor de bodega</h1>
-
+    <form id="bodegaForm">
     <div class="container-fluid">
 
         <!-- Datos del producto y su foto -->
@@ -23,54 +23,49 @@
             <!-- Datos del producto a ingresar a la bodega -->
             <div class="col">
 
-                <div class="mb-3">
-                    <label for="categoria" class="form-label">
-                        Categoría
-                    </label>
-                    <select id="categoria" 
-                            class="form-select" 
-                            aria-label="Selecciona la categoría">
-                        <option selected>Selecciona la categoría</option>
-                        <option value="1">RPG</option>
-                        <option value="2">Aventuras</option>
-                        <option value="3">Shooter</option>
-                        <option value="3">Fantasía</option>
+                <div class="form-group">
+                    <label for="Categoria" class="form-label">Categoría del producto</label>
+                    <select id="categoria" name="categoria" style="width: 70%;" class="form-select justify-content-center" aria-label="categoría">
+                        <option selected value="">seleccione una categoria</option>
+                        <option value="1">Rol</option>
+                        <option value="2">Aventura</option>
                         <option value="3">Deportes</option>
-                        <option value="3">Simulación</option>
+                        <option value="4">Terror</option>
+                        <option value="5">RPG</option>
                     </select>
                 </div>
 
-                <div class="mb-3">
+                <div class="form-group">
                     <label for="nombre" class="form-label">
                         Nombre del producto
                     </label>
-                    <select id="nombre" 
+                    <select id="nombre" name="nombre"
                             class="form-select" 
                             aria-label="Selecciona el nombre del videojuego">
-                        <option selected>Selecciona el nombre del videojuego</option>
+                        <option selected value="">Selecciona el nombre del videojuego</option>
                         <option value="1">Sekiro: Shadows Die Twice</option>
                         <option value="2">StarWars Jedi: Survivor</option>
                         <option value="3">EldenRing</option>
-                        <option value="1">EA FC2024</option>
-                        <option value="1">Content Warning</option>
-                        <option value="1">HellDivers2</option>
-                        <option value="1">Otro:</option>
+                        <option value="4">EA FC2024</option>
+                        <option value="5">Content Warning</option>
+                        <option value="6">HellDivers2</option>
+                        <option value="7">Otro:</option>
 
                     </select>
                 </div>
-                <div class="mb-3">
+                <div class="form-group">
                     <label for="cantidad" class="form-label">
                         Cantidad
                     </label>
                     <input required placeholder="Indique cantidad de productos" 
-                            type="text" name="cantidad"
+                            type="number" name="cantidad"
                             id="cantidad" 
                             class="form-control" 
                             aria-label="Selecciona la cantidad">
                             <br>
                 </div>
             </div>
-            
+        </form>
             <div class="col">
                 <div class="col-md-6" style="margin-left: 230px;">
                     <!-- Imagen alineada a la derecha -->
@@ -82,10 +77,15 @@
         </div>
 
         <!-- Botones -->
+        <form id="bodegaForm">
         <div class="row">
             <div class="col">
-                <button class="btn btn-primary">Nuevo</button>
-                <button class="btn btn-primary">Agregar</button>
+                <button type="reset" style="margin-top: 10px" class="btn btn-primary">
+                    Nuevo
+                </button>
+                <button type="submit" style="margin-top: 10px" class="btn btn-secondary">
+                    Agregar
+                </button>
             </div>
         </div>
 
@@ -176,7 +176,7 @@
           </div>
         </div>
       </footer>
-      <script src="js/validadorbodega"></script>
+      <script src="js/validadorbodega.js"></script>
       <script src="js/javascript.js"></script>
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

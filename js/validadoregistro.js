@@ -30,10 +30,6 @@ $(document).ready(function() {
       return this.optional(element) || /^[a-zA-Z\s]*$/.test(value);
   }, "Sólo se permiten letras y espacios en blanco.");
 
-  $.validator.addMethod("passwordValido", function(value, element) {
-      return this.optional(element) || /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!"#$%])[A-Za-z\d!"#$%]{8,}$/.test(value);
-  }, "La contraseña debe tener al menos un número, un símbolo, una letra mayúscula y minúscula, y ser de al menos 8 caracteres.");
-
   $("#rut").on('keyup', function(e) {
       e.target.value = e.target.value.toUpperCase();
   });
@@ -48,7 +44,7 @@ $(document).ready(function() {
               required: true,
               soloLetras: true
           },
-          username: { 
+          apellidos: { 
               required: true,
               soloLetras: true
           },
@@ -63,7 +59,8 @@ $(document).ready(function() {
       
           password: {
               required: true,
-              passwordValido: true
+              minlength: 5,
+              maxlength:15
           },
           password2: {
               required: true,
@@ -79,7 +76,7 @@ $(document).ready(function() {
               required: "El nombre es un campo requerido",
               soloLetras: "El nombre sólo puede contener letras y espacios en blanco"
           },
-          username: { 
+          apellidos: { 
               required: "Los apellidos son un campo requerido",
               soloLetras: "Los apellidos sólo pueden contener letras y espacios en blanco"
           },
@@ -93,7 +90,8 @@ $(document).ready(function() {
 
           password: {
               required: "La contraseña es un campo requerido",
-              passwordValido: "La contraseña debe tener al menos un número, un símbolo, una letra mayúscula y minúscula, y ser de al menos 8 caracteres."
+              minlength: "La contraseña debe tener al menos 5 caracteres",
+              maxlength: "La contraseña debe como maximo 15 caracteres"
           },
           password2: {
               required: "Repetir contraseña es un campo requerido",

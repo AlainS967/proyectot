@@ -14,7 +14,8 @@ $(document).ready(function() {
             },
             contraseña: {
                 required: true,
-                minlength: 8
+                minlength: 5,
+                maxlength:15
             }
         },
         messages: {
@@ -23,7 +24,8 @@ $(document).ready(function() {
             },
             contraseña: {
                 required: "Por favor ingresa tu contraseña.",
-                minlength: "Tu contraseña debe tener al menos 8 caracteres."
+                minlength: "Tu contraseña debe tener al menos 5 caracteres.",
+                maxlength: "Tu contraseña no debe ser mas  de 15 caracteres."
             }
         },
       errorElement: "div",
