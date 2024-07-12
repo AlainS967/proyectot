@@ -12,6 +12,40 @@ def index(request):  # Create a view for the 'Inicio' page
 def registro(request):
     return render(request, 'core/registro.html')
 
+def nosotros(request):
+    return render(request, 'core/nosotros.html')
+
+def ingresar(request):
+    return render(request, 'core/ingresar.html')
+
+def administrador(request):
+    return render(request, 'core/administrador.html')
+
+def ropa(request):
+    return render(request, 'core/ropa.html')
+
+def mant_usuarios(request):
+    return render(request, 'core/mant_usuarios.html')
+
+def mant_productos(request):
+    return render(request, 'core/mant_productos.html')
+
+def historialcompras(request):
+    return render(request, 'core/historialcompras.html')
+
+def mant_bodega(request):
+    return render(request, 'core/mant_bodega.html')
+
+def boleta(request):
+    return render(request, 'core/boleta.html')
+
+def fichasekiro(request):
+    return render(request, 'core/fichasekiro.html')
+
+def indexadmin(request):
+    return render(request, 'core/indexadmin.html')
+
+
 def producto_tienda(request):
     productos = Producto.objects.all().order_by('nombreProducto')
     return render(request, "core/producto_tienda.html", {'productos': productos})

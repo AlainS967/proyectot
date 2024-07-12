@@ -1,4 +1,8 @@
-{% load static %}
+{% extends 'core/base.html' %}
+{% load static %}  
+
+{% block content %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +15,7 @@
 </head>
 
 <body>
-  <div id="menu"></div>
+  
   <h1>Nosotros</h1>
   <p style="text-align: center; margin-top: 30px; margin-bottom: 30px; 
   color: black; font-size: 18px;">
@@ -31,7 +35,7 @@
       <div class="col ">
         <div class="card" style="width: 18rem; background-color: whitesmoke;">
           <p></p>
-          <img src="img/elon.jpg" style="padding: 1px;" class="card-img-top" alt="...">
+          <img src="{% static 'core/img/elon.jpg' %}" style="padding: 1px;" class="card-img-top" alt="...">
           <div class="card-body" style="background-color: whitesmoke;">
             <h4 class="card-title" style="color: black; text-shadow: none;
             text-align: center; font-size: 30px; font-weight: bolder;">Felipe Zamorano</h4>
@@ -47,7 +51,7 @@
       </div>
       <div class="col ">
         <div class="card" style="width: 18rem; margin-bottom: 50px;">
-          <img src="img/jeff.jpeg" style="padding: 1px;" class="card-img-top" alt="...">
+          <img src="{% static 'core/img/jeff.jpeg' %}" style="padding: 1px;" class="card-img-top" alt="...">
           <div class="card-body" style="background-color: whitesmoke;">
             <h4 class="card-title" style="color: black; text-shadow: none;
             text-align: center; font-size: 30px; font-weight: bolder;">Alain Sour</h4>
@@ -62,7 +66,7 @@
       <div class="col ">
 
         <div class="card" style="width: 18rem;">
-          <img src="img/bill.jpg" style="padding: 1px;" class="card-img-top" alt="...">
+          <img src="{% static 'core/img/bill.jpg' %}" style="padding: 1px;" class="card-img-top" alt="...">
           <div class="card-body" style="background-color: whitesmoke;">
             <h4 class="card-title" style="color: black; text-shadow: none;
             text-align: center; font-size: 30px; font-weight: bolder;">
@@ -108,3 +112,4 @@
 </body>
 
 </html>
+{% endblock content %}

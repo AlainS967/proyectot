@@ -1,4 +1,8 @@
-{% load static %}
+{% extends 'core/base.html' %}
+{% load static %}  
+
+{% block content %}
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,7 +19,6 @@
 </head>
 
 <body>
-    <div id="menu"></div>
 
     <div class="container border border-dark p-4">
         <h2 class="text-center">Mis Datos</h2>
@@ -118,3 +121,4 @@
     <script src="{% static 'core/js/javascript.js' %}"></script>
 </body>
 </html>
+{% endblock content %}

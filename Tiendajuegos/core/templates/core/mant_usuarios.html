@@ -1,4 +1,9 @@
-{% load static %}
+{% extends 'core/base.html' %}
+{% load static %}  
+
+{% block content %}
+
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -13,7 +18,6 @@
 </head>
 
 <body>
-    <div id="menu"></div>
 
     <div class="container">
         <h2 class="text-center">Mantenedor Usuarios</h2>
@@ -85,7 +89,7 @@
 
                     <div class="col">
                         <div class="col-md-6" style="margin-left: 230px;">
-                            <img src="img/fotousuario.png" style="object-fit: cover; max-width: 100%;" alt="Foto perfil usuario" class="float-right">
+                            <img src="{% static 'core/img/fotousuario.png' %}" style="object-fit: cover; max-width: 100%;" alt="Foto perfil usuario" class="float-right">
                             <br>
                             <br>
                             <button type="button" class="btn btn-primary btn-block" style="margin-left: 100px;">Examinar</button>
@@ -215,3 +219,4 @@
 </body>
 
 </html>
+{% endblock content %}

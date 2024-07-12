@@ -1,4 +1,4 @@
-{% load static %} 
+
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Menú</a>
@@ -18,7 +18,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">
+          <a class="nav-link active" aria-current="page" href="{% url 'index' %}">
             Inicio
           </a>
         </li>
@@ -30,25 +30,25 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="nosotros.html">
+          <a class="nav-link active" aria-current="page" href="{% url 'nosotros' %}">
             Nosotros
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="ingresar.html">
+          <a class="nav-link active" aria-current="page" href="{% url 'ingresar' %}">
             Ingresar
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="administrador.html">
+          <a class="nav-link active" aria-current="page" href="{% url 'administrador' %}">
             Administrar
           </a>
         </li>
 
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="ropa.html">
+        <a class="nav-link active" aria-current="page" href="{% url 'ropa' %}">
           Promocion
         </a>
       </li>

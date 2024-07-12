@@ -1,4 +1,8 @@
-{% load static %}
+{% extends 'core/base.html' %}
+{% load static %}  
+
+{% block content %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,7 +13,6 @@
     <link rel="stylesheet" type="text/css" href="{% static 'core/css/style.css' %}">
   </head>
   <body class="ficha_sekiro">
-    <div id="menu"></div>
 
     <h1>Ficha de producto</h1>
     <div class="container-fluid">
@@ -96,3 +99,4 @@
     ></script>
   </body>
 </html>
+{% endblock content %}

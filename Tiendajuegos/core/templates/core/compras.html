@@ -1,4 +1,8 @@
-{% load static %}
+{% extends 'core/base.html' %}
+{% load static %}  
+
+{% block content %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +15,6 @@
 </head>
 
 <body>
-    <div id="menu"></div>
 
     <h1 style="font-size: 60px;">Mis compras</h1>
 
@@ -152,3 +155,4 @@
 </body>
 
 </html>
+{% endblock content %}

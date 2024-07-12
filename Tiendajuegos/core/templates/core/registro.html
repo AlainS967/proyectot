@@ -1,4 +1,8 @@
-{% load static %}
+{% extends 'core/base.html' %}
+{% load static %}  
+
+{% block content %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +21,6 @@
 </head>
 <body class="registro_cliente">
 
-    <div id="menu"></div>
 
     <div class="container border border-dark p-4">
         <h2 class="text-center">Registro cliente</h2>
@@ -129,7 +132,7 @@
             <div class="col-md-6" style="margin-left: 230px">
               <!-- Imagen a la derecha -->
               <img
-                src="img/fotousuario.png"
+                src="{% static 'core/img/fotousuario.png' %}"
                 style="object-fit: cover; max-width: 100%"
                 alt="Foto perfil usuario"
                 class="float-right"
@@ -175,3 +178,4 @@
     <script src="{% static 'core/js/javascript.js' %}"></script>
 </body>
 </html>
+{% endblock content %}

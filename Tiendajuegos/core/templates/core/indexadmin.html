@@ -1,4 +1,9 @@
-{% load static %}
+{% extends 'core/base.html' %}
+{% load static %}  
+
+{% block content %}
+
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -12,7 +17,6 @@
 
 <body id="fondo_index">
 
-  <div id="menu"></div>
 
   <h1> Bienvenidos! </h1>
 
@@ -34,7 +38,7 @@
 
       <!-- Primer slide del carrusel -->
       <div class="carousel-item active">
-        <img id="sekiro_carrusel" src="img/sekirocarrusel.webp" width="480px" height="480px" class="d-block w-100"
+        <img id="sekiro_carrusel" src="{% static 'core/img/sekirocarrusel.webp' %}" width="480px" height="480px" class="d-block w-100"
           alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5 id="titulo_sekiro_carrusel">Sekiro: Shadows Die Twice</h5>
@@ -48,7 +52,7 @@
       </div>
       <!-- Segundo slide del carrusel -->
       <div class="carousel-item">
-        <img id="eldenring_carrusel" src="img/eldenringcarrusel.jpg" width="480px" height="480px" class="d-block w-100"
+        <img id="eldenring_carrusel" src="{% static 'core/img/eldenringcarrusel.jpg' %}" width="480px" height="480px" class="d-block w-100"
           alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5 id="titulo_eldenring_carrusel">Elden Ring: Shadow of the erdtree</h5>
@@ -62,7 +66,7 @@
 
       <!-- Tercer slide del carrusel. -->
       <div class="carousel-item">
-        <img id="jedisurvivor_carrusel" src="img/starwarscarrusel.jpg" width="480px" height="480px" class="d-block w-100"
+        <img id="jedisurvivor_carrusel" src="{% static 'core/img/starwarscarrusel.jpg' %}" width="480px" height="480px" class="d-block w-100"
           alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5 id="titulo_starwars_carrusel">Star wars Jedi: survivor</h5>
@@ -92,7 +96,7 @@
 
       <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
         <div class="card" style="width: 18rem;">
-          <img src="img/sekiro.jpeg" class="card-img-top" alt="...">
+          <img src="{% static 'core/img/sekiro.jpeg' %}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Sekiro: Shadows Die Twice</h5>
             <p class="card-text">
@@ -125,7 +129,7 @@
 
       <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
         <div class="card" style="width: 18rem;">
-          <img src="img/eldenring.jpeg" class="card-img-top" alt="...">
+          <img src="{% static 'core/img/eldenring.jpeg' %}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Elden Ring</h5>
             <p class="card-text">
@@ -159,7 +163,7 @@
 
       <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
         <div class="card" style="width: 18rem;">
-          <img src="img/starwars.webp" class="card-img-top" alt="...">
+          <img src="{% static 'core/img/starwars.webp' %}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Star Wars JEDI: Survivor</h5>
             <p class="card-text">
@@ -192,7 +196,7 @@
 
       <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
         <div class="card" style="width: 18rem;">
-          <img src="img/contentwarning.jpg" class="card-img-top" alt="...">
+          <img src="{% static 'core/img/contentwarning.jpg' %}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Content Warning</h5>
             <p class="card-text">
@@ -225,7 +229,7 @@
 
       <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
         <div class="card" style="width: 18rem;">
-          <img src="img/baldursgate.jpg" class="card-img-top" alt="...">
+          <img src="{% static 'core/img/baldursgate.jpg' %}"class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">
               Baldur's gate III
@@ -260,7 +264,7 @@
 
       <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
         <div class="card" style="width: 18rem;">
-          <img src="img/rust.jpg" class="card-img-top" alt="...">
+          <img src="{% static 'core/img/rust.jpg' %}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Rust</h5>
             <p class="card-text">
@@ -293,7 +297,7 @@
 
       <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
         <div class="card" style="width: 18rem;">
-          <img src="img/easports.jpg" class="card-img-top" alt="...">
+          <img src="{% static 'core/img/easports.jpg' %}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">EA Sports FC 24</h5>
             <p class="card-text">
@@ -326,7 +330,7 @@
 
       <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
         <div class="card" style="width: 18rem;">
-          <img src="img/helldivers.avif" class="card-img-top" alt="...">
+          <img src="{% static 'core/img/HellDivers.avif' %}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">HellDivers 2</h5>
             <p class="card-text">
@@ -394,3 +398,4 @@
 
 
 </html>
+{% endblock content %}
