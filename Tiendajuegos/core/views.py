@@ -9,6 +9,9 @@ def home(request):
 def index(request):  # Create a view for the 'Inicio' page
     return render(request, 'core/index.html')  # Render the 'base.html' template
 
+def registro(request):
+    return render(request, 'core/registro.html')
+
 def producto_tienda(request):
     productos = Producto.objects.all().order_by('nombreProducto')
     return render(request, "core/producto_tienda.html", {'productos': productos})
